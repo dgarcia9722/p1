@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -25,22 +24,16 @@ th, td {
 
     <td><p></p>
 
-    {%for i in range(8)%}
+    {%for i in range(9)%}
     <p>{{i+1}}</p>
     {%endfor%}</td>
 
     <td><p></p>
-
-      <p>{{result[0]['_id']['NOMBRE']}}</p>
-      <p>{{result[1]['_id']['NOMBRE']}}</p>
-      <p>{{result[2]['_id']['NOMBRE']}}</p>
-      <p>{{result[3]['_id']['NOMBRE']}}</p>
-      <p>{{result[4]['_id']['NOMBRE']}}</p>
-      <p>{{result[5]['_id']['NOMBRE']}}</p>
-      <p>{{result[6]['_id']['NOMBRE']}}</p>
-      <p>{{result[7]['_id']['NOMBRE']}}</p>
-
+    {%for i in range(9)%}
+    <p>{{result[i]['_id']['NOMBRE']}}</p>
+    {%endfor%}</td>
   </tr>
+
 
 
 </table>
