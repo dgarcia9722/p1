@@ -1,14 +1,51 @@
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
     <title></title>
   </head>
+  <style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse:
+}
+th, td {
+  padding: 15px;
+}
+</style>
   <body>
-    <h1></h1>
-  <p>ID </p> 
-  {%for i in range(19)%}
-  <p>{{i+1}}</p>
-  {%endfor%}
+    <table style=width:"15%" align="justify"  >
+  <tr>
+
+    <th>ID</th>
+    <th>NOMBRE</th>
+  </tr>
+  <tr>
+
+    <td><p></p>
+
+    {%for i in range(8)%}
+    <p>{{i+1}}</p>
+    {%endfor%}</td>
+
+    <td><p></p>
+
+      <p>{{result[0]['_id']['NOMBRE']}}</p>
+      <p>{{result[1]['_id']['NOMBRE']}}</p>
+      <p>{{result[2]['_id']['NOMBRE']}}</p>
+      <p>{{result[3]['_id']['NOMBRE']}}</p>
+      <p>{{result[4]['_id']['NOMBRE']}}</p>
+      <p>{{result[5]['_id']['NOMBRE']}}</p>
+      <p>{{result[6]['_id']['NOMBRE']}}</p>
+      <p>{{result[7]['_id']['NOMBRE']}}</p>
+
+  </tr>
+
+
+</table>
+
+
+
   </body>
 </html>
